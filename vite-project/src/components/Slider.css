@@ -1,0 +1,205 @@
+.slider {
+    width: 100%;
+    height: 890px;
+    background: linear-gradient(135deg, #fca311, #ffd60a);    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .range{
+    font-family: 'Rowdies', cursive;
+    font-size: 49px;
+    /* margin-top: 100px; */
+    color: black;
+
+  }
+  .slider-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+  }
+  
+  .slide {
+    position: absolute;
+    transition: all 0.5s ease;
+    opacity: 0;
+    transform: scale(0.7);
+    width: 300px;  /* Adjust base width */
+    height: auto;  /* Keep proportions */
+  }
+  
+  .slide.center {
+    opacity: 1;
+    transform: scale(1.4);
+    z-index: 3;
+  }
+  
+  .slide.left {
+    opacity: 0.5;
+    transform: translateX(-500px) scale(0.8);
+    z-index: 2;
+  }
+  
+  .slide.right {
+    opacity: 0.5;
+    transform: translateX(500px) scale(0.8);
+    z-index: 2;
+  }
+  
+  .slide.hidden {
+    opacity: 0;
+    transform: scale(0.5);
+    z-index: 1;
+  }
+  
+  .arrow {
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+
+    height: 50px;
+    width: 50px;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  
+  .left-arrow {
+    position: absolute;
+    left: 650px;
+    bottom: 20px;
+
+  }
+  
+  .right-arrow {
+    position: absolute;
+    right: 650px;
+    bottom: 20px;
+    
+  }
+  .maggie-img {
+    width: 300px;
+    height: auto;
+    transform-style: preserve-3d;
+  }
+  
+  /* ensure wrapper is positioned for the absolute card */
+.slider-wrapper {
+    position: relative; /* you likely already have this */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* card base (no pointer here) */
+  .nutrition-card {
+    position: absolute;
+    bottom: 80px; /* adjust as needed */
+    left: 105%;
+    transform: translateX(-50%) translateY(12px); /* start slightly lower */
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(6px);
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    font-size: 14px;
+    z-index: 4;
+    text-align: center;
+  
+    /* start hidden */
+    opacity: 0;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  /* visible state — fades in and moves up */
+  .nutrition-card.visible {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  
+  /* table styling */
+  .nutrition-card h3 {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+  }
+  .nutrition-card table {
+    border-collapse: collapse;
+  }
+  .nutrition-card td {
+    padding: 4px 8px;
+  }
+  
+  /* Triangle pointer */
+  .nutrition-card::after {
+    content: "";
+    position: absolute;
+    transform: rotate(85deg);
+    top: 90%; /* bottom of the card */
+    left: -20px; /* moves arrow to the left side */
+    border-width: 10px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.65) transparent transparent transparent;
+  }
+  
+  .slider-data {
+    display: flex;
+    gap: 18rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slider-right {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 1rem;
+    color: #5a2d0c;
+    width: 700px;
+  }
+  
+  .slider-right h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    width: 590px;
+    font-family: 'Rowdies', cursive;
+    margin-bottom: 20px;
+
+  }
+  
+  .slider-right p {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    margin-bottom: 20px;
+
+  }
+  .try-now-btn {
+    margin-top: 1rem;
+    background: linear-gradient(135deg, #fca311, #ffd60a);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .try-now-btn:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  }
+  

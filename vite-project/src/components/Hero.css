@@ -57,7 +57,7 @@ width: 700px;
 }
 
 .hero {
-  background-color: #F9C74F;
+  background: radial-gradient(circle, #FFE34C 0%, #FFB900 100%);
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -106,18 +106,113 @@ width: 700px;
 .t1 { top: 100px; left: 100px; width: 80px; }
 .t2 { top: 300px; right: 150px; width: 70px; }
 .t3 { bottom: 150px; left: 200px; width: 90px; }
+.t4 { bottom: -60px; right: 0px; width: 90px; }
 
 .p1 { top: 150px; right: 300px; width: 50px; }
 .p2 { bottom: 200px; right: 100px; width: 60px; }
 
 .b1 { top: 50px; right: 50px; width: 100px; }
-.b2 { bottom: 100px; left: 50px; width: 120px; }
+.b2 { bottom: 350px; left: -50px; width: 120px; }
 
 .bowl-img {
   position: absolute;
 top: 30%;
-  left: 30%;
+  left: 1%;
 
   width: 630px;
   z-index: 2;
 }
+.bg-tomato{
+    width: 150px;
+    height: 150px;
+}
+.bg-basil{
+    width: 150px;
+    height: 150px;
+}
+.bowl-container {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+  }
+  
+  .bowl-text {
+    position: absolute;
+ top: 320px;
+    left: -390px;
+    /* color: white; */
+    color: #000;
+    font-size: 1.2rem;
+  width: 430px;
+  z-index: 10;
+
+  }
+  .bowl-text p{
+    margin-bottom: 20px;
+
+  }
+  .bowl-text .one-p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+
+  }
+  .cta-btn {
+    padding: 8px 16px;
+    background: #F94144;
+    color: white;
+    width: 120px;
+    height: 50px;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background: #d62828;
+  }
+  .highlight-card {
+    position: absolute;
+    right: -320px; /* adjust to place beside bowl */
+    top: 300px;
+    transform: translateY(-50%);
+    width: 200px;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+  
+  .highlight-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #000;
+  }
+  
+  .highlight-card p {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+    font-family: 'Poppins', sans-serif;
+
+  }
+  
+  .highlight-btn {
+    background: #ff3d3d;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .highlight-btn:hover {
+    background: #ff1a1a;
+  }
+  
