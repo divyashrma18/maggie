@@ -13,20 +13,18 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     overflow: hidden;
-    
-    /* Hexagon shape */
-    clip-path: polygon(
-        0 0,         /* top-left */
-        50px 100%,   /* left bottom corner */
-        calc(100% - 50px) 100%, /* right bottom corner */
-        100% 0       /* top-right */
+        clip-path: polygon(
+        0 0,         
+        50px 100%,   
+        calc(100% - 50px) 100%, 
+        100% 0       
       );
   }
   
   .logo img {
     height: 100px;
     width: auto;
-    display: block; /* removes default inline spacing */
+    display: block; 
   }  
 
 .nav-links {
@@ -45,7 +43,7 @@
 }
 
 .nav-links a:hover {
-  color: #f9c74f; /* warm yellow hover */
+  color: #f9c74f; 
 }
 
 .logo img {

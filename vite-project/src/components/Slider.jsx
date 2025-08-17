@@ -48,7 +48,7 @@ const Slider = () => {
   const timerRef = useRef(null);
 
   const { ref: sliderRef, inView } = useInView({
-    threshold: 0.3, // 20% visible
+    threshold: 0.3, 
     triggerOnce: true
   });
 
@@ -78,7 +78,6 @@ const Slider = () => {
 
   return (
     <div className="slider" ref={sliderRef}>
-      {/* Animated heading */}
       <motion.h1
         className="range"
         initial={{ y: 50, opacity: 0 }}

@@ -6,7 +6,7 @@
 }
 
 .hero {
-  background-color: #F9C74F; /* Warm golden yellow */
+  background-color: #F9C74F; 
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -27,8 +27,8 @@
 
 .hero-title {
   position: absolute;
-  top: 200px; /* adjust vertically to center on blob */
-  left: 420px; /* adjust horizontally to center on blob */
+  top: 200px; 
+  left: 420px; 
   color: rgba(255, 255, 255, 0.9);
   font-size: 11rem;
   font-weight: 700;
@@ -37,17 +37,17 @@
 }
 .bowl-img {
   position: absolute;
-  top: 180px; /* position below the title */
-  left: 400px; /* center align with the blob/title */
-  width: 400px; /* adjust size */
+  top: 180px;
+  left: 400px; 
+  width: 400px;
 width: 700px;
-  z-index: 2; /* above blob but below nav if needed */
-  filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.5)); /* soft shadow for depth */
+  z-index: 2;
+  filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.5)); 
   transition: transform 0.3s ease;
 }
 
 .bowl-img:hover {
-  transform: scale(1.05); /* slight zoom on hover */
+  transform: scale(1.05); 
 }
 @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
 
@@ -90,13 +90,12 @@ width: 700px;
 
 .pea-under-title {
   position: absolute;
-  top: 180px; /* adjust to sit under MAGGI */
+  top: 180px; 
   left: 440px;
   width: 620px;
   z-index: 2;
 }
 
-/* Background floating items */
 .bg-tomato, .bg-pea, .bg-basil {
   position: absolute;
   opacity: 0.4;
@@ -140,7 +139,6 @@ top: 30%;
     position: absolute;
  top: 320px;
     left: -390px;
-    /* color: white; */
     color: #000;
     font-size: 1.2rem;
   width: 430px;
@@ -175,14 +173,14 @@ top: 30%;
   }
   .highlight-card {
     position: absolute;
-    right: -320px; /* adjust to place beside bowl */
+    right: -320px; 
     top: 300px;
     transform: translateY(-50%);
     width: 200px;
     padding: 20px;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(8px);
+    /* backdrop-filter: blur(8px); */
     border: 1px solid rgba(255, 255, 255, 0.2);
     color: #fff;
     text-align: center;

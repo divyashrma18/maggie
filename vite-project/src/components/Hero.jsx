@@ -15,11 +15,7 @@ const textVariant = {
 const Hero = () => {
   return (
     <div className="hero">
-      {/* Black blob background (static now) */}
       <div className="hero-blob"></div>
-
-      {/* Navbar with slide-down animation */}
-    {/* Navbar with bounce-down animation */}
 <motion.div
   initial={{ y: -100, opacity: 0 }}
   animate={{ y: 0, opacity: 1 }}
@@ -33,7 +29,6 @@ const Hero = () => {
   <Navbar />
 </motion.div>
 
-{/* Title with bounce-down animation */}
 <motion.h1
   className="hero-title"
   initial={{ y: -100, opacity: 0 }}
@@ -49,10 +44,8 @@ const Hero = () => {
 </motion.h1>
 
 
-      {/* Pea under title */}
       <img src="./images/pea.png" alt="pea" className="pea-under-title" />
 
-      {/* Background floating elements */}
       <img src="./images/tomato.png" alt="tomato" className="bg-tomato t1" />
       <img src="./images/tomato.png" alt="tomato" className="bg-tomato t2" />
       <img src="./images/tomato.png" alt="tomato" className="bg-tomato t3" />
@@ -61,9 +54,7 @@ const Hero = () => {
       <img src="./images/basil1.png" alt="basil1" className="bg-basil b1" />
       <img src="./images/basil1.png" alt="basil2" className="bg-basil b2" />
 
-      {/* Bowl + animations */}
       <div className="bowl-container">
-        {/* Bowl image from bottom */}
         <motion.img
           src="./images/bowl.png"
           alt="bowl"
@@ -74,7 +65,6 @@ const Hero = () => {
           transition={{ delay: 0.5, duration: 1, ease: 'easeOut' }}
         />
 
-        {/* Bowl text from left, staggered */}
         <div className="bowl-text">
           <motion.p
             custom={0}
@@ -104,7 +94,6 @@ const Hero = () => {
           </motion.button>
         </div>
 
-        {/* Highlight card from right */}
         <motion.div
           className="highlight-card"
           initial={{ x: 100, opacity: 0 }}
